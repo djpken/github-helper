@@ -175,5 +175,8 @@
   },
   "gist_profile": {
     "message": "View Gist Profile"
+  },
+  "notARepoPage": {
+    "message": "Đây không phải là trang kho lưu trữ."
   }
 }

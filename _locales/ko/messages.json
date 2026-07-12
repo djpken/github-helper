@@ -175,5 +175,8 @@
   },
   "gist_profile": {
     "message": "View Gist Profile"
+  },
+  "notARepoPage": {
+    "message": "저장소 페이지가 아닙니다."
   }
 }

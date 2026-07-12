@@ -175,5 +175,8 @@
   },
   "gist_profile": {
     "message": "View Gist Profile"
+  },
+  "notARepoPage": {
+    "message": "目前頁面不是倉庫頁面。"
   }
 }

@@ -175,5 +175,8 @@
   },
   "gist_profile": {
     "message": "查看 Gist 个人资料"
+  },
+  "notARepoPage": {
+    "message": "当前页面不是仓库页面。"
   }
 }
