@@ -10,6 +10,7 @@ export interface RepoOwner {
 }
 
 export interface RepoDetail {
+  full_name: string
   size: number
   pushed_at: string
   owner: RepoOwner
