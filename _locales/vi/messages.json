@@ -8,6 +8,9 @@
   "save": {
     "message": "Lưu"
   },
+  "saved": {
+    "message": "Đã lưu"
+  },
   "cancel": {
     "message": "Hủy"
   },

@@ -8,6 +8,9 @@
   "save": {
     "message": "保存"
   },
+  "saved": {
+    "message": "已保存"
+  },
   "cancel": {
     "message": "取消"
   },

@@ -8,6 +8,9 @@
   "save": {
     "message": "Save"
   },
+  "saved": {
+    "message": "Saved"
+  },
   "cancel": {
     "message": "Cancel"
   },
