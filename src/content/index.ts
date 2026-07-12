@@ -5,6 +5,8 @@ import { loadSettings, type Settings } from '../lib/settings'
 import { selectors, waitForElement, observeUrlChanges } from '../lib/dom-utils'
 import { addSizeToRepos } from './repo-size'
 import { notificationRepo } from './notification-preview'
+import { fixPageHeader } from './fixed-header'
+import { injectGistButton } from './gist-button'
 
 // Ports monkey.js:704-713 (main). GitHub's Turbo navigation swaps DOM content
 // without a full page load, so this races the known page-region selectors and
@@ -25,6 +27,14 @@ async function run(): Promise<void> {
   const onNavigate = () => runFeatures(settings)
   document.addEventListener('turbo:load', onNavigate)
   observeUrlChanges(onNavigate)
+
+  // Ports monkey.js:675-698 — runs once on initial load, then again once the
+  // DOM is ready (Turbo navigation doesn't refire DOMContentLoaded).
+  injectGistButton()
+  document.addEventListener('DOMContentLoaded', injectGistButton)
+
+  // Ports monkey.js:640-644 — window.onload, once per full page load only.
+  window.addEventListener('load', () => fixPageHeader(settings))
 }
 
 void run()

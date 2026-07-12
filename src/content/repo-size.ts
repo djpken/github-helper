@@ -35,12 +35,12 @@ function repoSelectorFor(pageType: PageType): string | undefined {
   }
 }
 
-function insertUserRepositoriesDeleteButtons(): void {
+function insertUserRepositoriesDeleteButtons(token: string): void {
   document.querySelectorAll('li[itemprop="owns"]').forEach((item) => {
     const repoName = item.querySelector('a[itemprop="name codeRepository"]')?.textContent?.trim()
     const ownerName = window.location.pathname.split('/')[1]
     if (!repoName) return
-    insertDelBtn(ownerName, repoName, false, 'dialog-show-repo-delete-user-repositories', item)
+    insertDelBtn(ownerName, repoName, false, 'dialog-show-repo-delete-user-repositories', item, token)
   })
 }
 
@@ -85,7 +85,7 @@ export function addSizeToRepos(settings: Settings): void {
   const repoSelector = repoSelectorFor(pageType)
   if (!repoSelector) return
 
-  if (pageType === 'user-repositories') insertUserRepositoriesDeleteButtons()
+  if (pageType === 'user-repositories') insertUserRepositoriesDeleteButtons(settings.githubToken)
 
   let filterHref: string | undefined
   document.querySelectorAll<HTMLAnchorElement>(repoSelector).forEach(async (elem) => {
@@ -97,7 +97,7 @@ export function addSizeToRepos(settings: Settings): void {
       const [, owner, name] = href.split('/')
       insertActiveForks(owner, name, !isMobileDevice())
       insertOssInsightButton(owner, name, !isMobileDevice())
-      if (isLoggedInUserF()) insertDelBtn(owner, name, !isMobileDevice())
+      if (isLoggedInUserF()) insertDelBtn(owner, name, !isMobileDevice(), undefined, undefined, settings.githubToken)
     }
 
     const repo = await fetchRepoDetail(href, settings.githubToken)
