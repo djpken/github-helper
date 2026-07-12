@@ -1,59 +1,176 @@
 {
-  "extName": { "message": "GitHub 增强小助手" },
-  "extDescription": { "message": "在仓库名称旁显示仓库大小，对长期未更新的仓库发出不活跃警告，并为用户仓库提供快速跳转菜单。" },
-
-  "save": { "message": "保存" },
-  "cancel": { "message": "取消" },
-  "modaltitle": { "message": "设置 GitHub 令牌" },
-  "description": { "message": "请输入您的 GitHub 个人访问令牌，需具备 \"repo\" 权限。" },
-  "githubtokeninput": { "message": "请输入您的 GitHub 个人访问令牌" },
-  "newtoken": { "message": "点击此处创建新的令牌" },
-  "warncheckbox": { "message": "非活跃开发警告" },
-  "menu": { "message": "设置 GitHub 令牌" },
-  "renderWarning": { "message": "警告：该仓库在 1 年以上未更新" },
-  "renderCaution": { "message": "注意：该仓库在 6 个月以上未更新" },
-  "confirm": { "message": "你没有输入Token,确认清空GitHub Token?" },
+  "extName": {
+    "message": "GitHub 增强小助手"
+  },
+  "extDescription": {
+    "message": "在仓库名称旁显示仓库大小，对长期未更新的仓库发出不活跃警告，并为用户仓库提供快速跳转菜单。"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "modaltitle": {
+    "message": "设置 GitHub 令牌"
+  },
+  "description": {
+    "message": "请输入您的 GitHub 个人访问令牌，需具备 \"repo\" 权限。"
+  },
+  "githubtokeninput": {
+    "message": "请输入您的 GitHub 个人访问令牌"
+  },
+  "newtoken": {
+    "message": "点击此处创建新的令牌"
+  },
+  "warncheckbox": {
+    "message": "非活跃开发警告"
+  },
+  "menu": {
+    "message": "设置 GitHub 令牌"
+  },
+  "renderWarning": {
+    "message": "警告：该仓库在 1 年以上未更新"
+  },
+  "renderCaution": {
+    "message": "注意：该仓库在 6 个月以上未更新"
+  },
+  "confirm": {
+    "message": "你没有输入Token,确认清空GitHub Token?"
+  },
   "timediff": {
     "message": "最后一次提交距现在：$YEARS$年$MONTHS$个月$DAYS$天 ",
     "placeholders": {
-      "years": { "content": "$1", "example": "2" },
-      "months": { "content": "$2", "example": "3" },
-      "days": { "content": "$3", "example": "15" }
+      "years": {
+        "content": "$1",
+        "example": "2"
+      },
+      "months": {
+        "content": "$2",
+        "example": "3"
+      },
+      "days": {
+        "content": "$3",
+        "example": "15"
+      }
     }
   },
-  "view": { "message": "查看" },
-  "allRepos": { "message": "所有仓库" },
-  "newTab": { "message": "快速查看仓库时新窗口打开" },
-  "repoSize": { "message": "仓库大小：" },
-  "repoDes": { "message": "仓库简介：" },
-  "repoLang": { "message": "主要语言：" },
-  "repoPage": { "message": "主页：" },
-  "repoTotal": { "message": "统计：" },
-  "repoLicense": { "message": "开源协议：" },
-  "repoCreated": { "message": "初始创建时间：" },
-  "repoUpdated": { "message": "最后一次更新：" },
-  "repoPushed": { "message": "最后一次推送：" },
-  "repoForks": { "message": "复刻：" },
-  "repoStars": { "message": "星标：" },
-  "repoWatcher": { "message": "关注者：" },
-  "ossinsight": { "message": "仓库对应的 OSS Insight 分析页面" },
-  "activeforks": { "message": "仓库对应的活跃复刻列表" },
-  "activeforks_": { "message": "活跃的复刻" },
-  "publicRepos": { "message": "公共仓库: " },
-  "privateRepos": { "message": "私有仓库: " },
-  "forkRepos": { "message": "分叉仓库: " },
-  "deleteRepo_i": { "message": "你正在尝试删除仓库：" },
-  "deleteRepo": { "message": "删除仓库是一个极其危险的操作\n你一旦删除仓库，将再也无法恢复。\n请三思而后行! 数据无价，且行且珍惜" },
-  "deleteRepo_ask": { "message": "你确定要删除仓库吗? (已确认" },
-  "deleteRepo_pass": { "message": "删除成功!" },
-  "deleteRepo_failed": { "message": "删除失败!\n建议检查GitHub token 是否具有删除仓库的权限!" },
-  "deleteRepo_failed_status": { "message": "状态码:" },
-  "deleteRepo_btn": { "message": "删除仓库" },
-  "get_more_repos": { "message": "快捷跳转仓库-自定义获取用户仓库" },
-  "get_more_repos_maxpage": { "message": "快捷跳转仓库-下方输入获取仓库最大页数,默认为1页(0表示不限制)" },
-  "get_more_repos_perpage": { "message": "快捷跳转仓库-下方输入获取每页显示的数量" },
-  "fixed_head": { "message": "固定页面导航栏" },
-  "fixed_head_on_mobile": { "message": "移动设备上固定页面导航栏" },
-  "refresh_time": { "message": "输入本地缓存的刷新时间(格式1:1h30m 格式2:10h 格式3:90s 等等...)" },
-  "gist_profile": { "message": "查看 Gist 个人资料" }
+  "timediffNoYears": {
+    "message": "最后一次提交距现在：$MONTHS$个月$DAYS$天 ",
+    "placeholders": {
+      "months": {
+        "content": "$1",
+        "example": "3"
+      },
+      "days": {
+        "content": "$2",
+        "example": "15"
+      }
+    }
+  },
+  "view": {
+    "message": "查看"
+  },
+  "allRepos": {
+    "message": "所有仓库"
+  },
+  "newTab": {
+    "message": "快速查看仓库时新窗口打开"
+  },
+  "repoSize": {
+    "message": "仓库大小："
+  },
+  "repoDes": {
+    "message": "仓库简介："
+  },
+  "repoLang": {
+    "message": "主要语言："
+  },
+  "repoPage": {
+    "message": "主页："
+  },
+  "repoTotal": {
+    "message": "统计："
+  },
+  "repoLicense": {
+    "message": "开源协议："
+  },
+  "repoCreated": {
+    "message": "初始创建时间："
+  },
+  "repoUpdated": {
+    "message": "最后一次更新："
+  },
+  "repoPushed": {
+    "message": "最后一次推送："
+  },
+  "repoForks": {
+    "message": "复刻："
+  },
+  "repoStars": {
+    "message": "星标："
+  },
+  "repoWatcher": {
+    "message": "关注者："
+  },
+  "ossinsight": {
+    "message": "仓库对应的 OSS Insight 分析页面"
+  },
+  "activeforks": {
+    "message": "仓库对应的活跃复刻列表"
+  },
+  "activeforks_": {
+    "message": "活跃的复刻"
+  },
+  "publicRepos": {
+    "message": "公共仓库: "
+  },
+  "privateRepos": {
+    "message": "私有仓库: "
+  },
+  "forkRepos": {
+    "message": "分叉仓库: "
+  },
+  "deleteRepo_i": {
+    "message": "你正在尝试删除仓库："
+  },
+  "deleteRepo": {
+    "message": "删除仓库是一个极其危险的操作\n你一旦删除仓库，将再也无法恢复。\n请三思而后行! 数据无价，且行且珍惜"
+  },
+  "deleteRepo_ask": {
+    "message": "你确定要删除仓库吗? (已确认"
+  },
+  "deleteRepo_pass": {
+    "message": "删除成功!"
+  },
+  "deleteRepo_failed": {
+    "message": "删除失败!\n建议检查GitHub token 是否具有删除仓库的权限!"
+  },
+  "deleteRepo_failed_status": {
+    "message": "状态码:"
+  },
+  "deleteRepo_btn": {
+    "message": "删除仓库"
+  },
+  "get_more_repos": {
+    "message": "快捷跳转仓库-自定义获取用户仓库"
+  },
+  "get_more_repos_maxpage": {
+    "message": "快捷跳转仓库-下方输入获取仓库最大页数,默认为1页(0表示不限制)"
+  },
+  "get_more_repos_perpage": {
+    "message": "快捷跳转仓库-下方输入获取每页显示的数量"
+  },
+  "fixed_head": {
+    "message": "固定页面导航栏"
+  },
+  "fixed_head_on_mobile": {
+    "message": "移动设备上固定页面导航栏"
+  },
+  "refresh_time": {
+    "message": "输入本地缓存的刷新时间(格式1:1h30m 格式2:10h 格式3:90s 等等...)"
+  },
+  "gist_profile": {
+    "message": "查看 Gist 个人资料"
+  }
 }

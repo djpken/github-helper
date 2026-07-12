@@ -103,7 +103,7 @@ export function addSizeToRepos(settings: Settings): void {
     const repo = await fetchRepoDetail(href, settings.githubToken)
     if (repo.message) return
 
-    if (pageType === 'repo' && settings.warn) checkCommitDate(repo.pushed_at, settings)
+    if (pageType === 'repo' && settings.warn) checkCommitDate(repo.pushed_at)
     if (pageType === 'repo' && !document.querySelector('#view-user-repos')) {
       maybeShowQuickJump(repo, settings)
     }
