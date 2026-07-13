@@ -1,0 +1,16 @@
+/* Static content-script CSS, injected via manifest.json content_scripts[0].css
+   (replaces monkey.js's GM_addStyle calls). Feature-specific rules land here as
+   each phase adds its DOM. */
+
+/* Quick-jump dropdown (repo-quick-jump.ts). Originally injected at runtime via
+   a <style> element in insertReposList — moved to static CSS since it never changes. */
+#view-user-repos {
+  order: 10;
+}
+#view-user-repos .dropdown-menu {
+  min-width: 170px;
+  width: auto;
+}
+#view-user-repos .dropdown-menu .dropdown-item .d-inline-flex {
+  vertical-align: sub;
+}
