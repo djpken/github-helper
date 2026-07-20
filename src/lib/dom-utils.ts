@@ -33,6 +33,8 @@ export const selectors = [
   '#repository-container-header strong a',
   'div[data-testid="list-view-item-title-container"] h4 a',
   '#user-repositories-list h3 a',
+  '#profile-lists-container',
+  '#user-starred-repos',
   '#user-starred-repos h3 a',
   'div[data-testid="results-list"] .search-title a',
   '.notifications-list',

@@ -178,5 +178,80 @@
   },
   "notARepoPage": {
     "message": "目前頁面不是倉庫頁面。"
+  },
+  "openStars": {
+    "message": "開啟我的 Stars"
+  },
+  "openStarsChecking": {
+    "message": "正在確認目前作用中的 GitHub 頁面…"
+  },
+  "openStarsUnavailable": {
+    "message": "請先開啟並登入 GitHub 頁面，以驗證帳號。"
+  },
+  "starsManagerTitle": {
+    "message": "Star 管理器"
+  },
+  "starsManagerReadingStars": {
+    "message": "正在讀取 Star repositories…"
+  },
+  "starsManagerScanningStars": {
+    "message": "正在讀取 Star repositories（第 $PAGE$ 頁）…",
+    "placeholders": {
+      "page": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "starsManagerDiscoveringLists": {
+    "message": "正在尋找 GitHub Lists…"
+  },
+  "starsManagerScanningList": {
+    "message": "正在讀取 List $CURRENT$ / $TOTAL$：$NAME$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      },
+      "name": {
+        "content": "$3",
+        "example": "agent"
+      }
+    }
+  },
+  "starsManagerSummary": {
+    "message": "分類完成：$TOTAL$ 個 Repository，$UNARCHIVED$ 個未歸檔。",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "30"
+      },
+      "unarchived": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "starsManagerIncomplete": {
+    "message": "分類資料未完成：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GitHub session 無法使用"
+      }
+    }
+  },
+  "starsManagerRetry": {
+    "message": "重試"
+  },
+  "starsManagerUnarchived": {
+    "message": "未歸檔清單"
+  },
+  "starsManagerUnarchivedEmpty": {
+    "message": "沒有未歸檔的 Repository。"
   }
 }

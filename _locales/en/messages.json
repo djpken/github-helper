@@ -178,5 +178,80 @@
   },
   "notARepoPage": {
     "message": "Not a repository page."
+  },
+  "openStars": {
+    "message": "Open my Stars"
+  },
+  "openStarsChecking": {
+    "message": "Checking the active GitHub page..."
+  },
+  "openStarsUnavailable": {
+    "message": "Open a logged-in GitHub page to verify your account."
+  },
+  "starsManagerTitle": {
+    "message": "Star manager"
+  },
+  "starsManagerReadingStars": {
+    "message": "Reading starred repositories..."
+  },
+  "starsManagerScanningStars": {
+    "message": "Reading starred repositories (page $PAGE$)...",
+    "placeholders": {
+      "page": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "starsManagerDiscoveringLists": {
+    "message": "Discovering GitHub Lists..."
+  },
+  "starsManagerScanningList": {
+    "message": "Reading List $CURRENT$ of $TOTAL$: $NAME$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      },
+      "name": {
+        "content": "$3",
+        "example": "agent"
+      }
+    }
+  },
+  "starsManagerSummary": {
+    "message": "Classification complete: $TOTAL$ repositories, $UNARCHIVED$ unarchived.",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "30"
+      },
+      "unarchived": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "starsManagerIncomplete": {
+    "message": "Classification data incomplete: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "GitHub session is unavailable"
+      }
+    }
+  },
+  "starsManagerRetry": {
+    "message": "Retry"
+  },
+  "starsManagerUnarchived": {
+    "message": "Unarchived repositories"
+  },
+  "starsManagerUnarchivedEmpty": {
+    "message": "There are no unarchived repositories."
   }
 }

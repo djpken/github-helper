@@ -7,6 +7,13 @@ import { addSizeToRepos } from './repo-size'
 import { notificationRepo } from './notification-preview'
 import { fixPageHeader } from './fixed-header'
 import { injectGistButton } from './gist-button'
+import { getCurrentGithubLogin } from './github-identity'
+import { runStarManager } from './star-manager'
+
+chrome.runtime.onMessage.addListener((message: unknown, _sender, sendResponse) => {
+  if (!message || typeof message !== 'object' || (message as { type?: unknown }).type !== 'github-helper:get-current-user') return
+  sendResponse({ login: getCurrentGithubLogin() })
+})
 
 // Ports monkey.js:704-713 (main). GitHub's Turbo navigation swaps DOM content
 // without a full page load, so this races the known page-region selectors and
@@ -17,6 +24,7 @@ function runFeatures(settings: Settings, delay = 0): void {
       setTimeout(() => {
         addSizeToRepos(settings)
         notificationRepo(settings)
+        runStarManager()
       }, delay)
     })
     .catch((error: Error) => console.error(error.message))
