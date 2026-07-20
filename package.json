@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "test:github-stars": "node --experimental-strip-types scripts/test-github-stars.ts",
     "preview": "vite preview"
   },
   "devDependencies": {

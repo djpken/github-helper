@@ -14,3 +14,59 @@
 #view-user-repos .dropdown-menu .dropdown-item .d-inline-flex {
   vertical-align: sub;
 }
+
+.github-helper-star-manager {
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid var(--borderColor-default, #d0d7de);
+  border-radius: 6px;
+  background: var(--bgColor-muted, #f6f8fa);
+  color: var(--fgColor-default, #1f2328);
+}
+.github-helper-star-manager__status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.github-helper-star-manager__status {
+  flex: 1;
+}
+.github-helper-star-manager__retry {
+  border: 1px solid var(--borderColor-default, #d0d7de);
+  border-radius: 6px;
+  padding: 3px 8px;
+  background: var(--bgColor-default, #fff);
+  color: inherit;
+  cursor: pointer;
+}
+.github-helper-star-manager__results {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--borderColor-muted, #d8dee4);
+}
+.github-helper-star-manager__heading {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.github-helper-star-manager__repository-list {
+  margin: 0;
+  padding-left: 20px;
+}
+.github-helper-star-manager__badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.github-helper-star-manager__badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid var(--borderColor-default, #d0d7de);
+  border-radius: 999px;
+  background: var(--bgColor-muted, #f6f8fa);
+  color: var(--fgColor-accent, #0969da);
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
